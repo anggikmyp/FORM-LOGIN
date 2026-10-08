@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Authentication Page</title>
+
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <main class="auth-page">
+
+        <!-- LEFT -->
+      <section class="left-section">
+        <video autoplay muted loop class="background-video">
+          <source src="video.mp4" type="video/mp4" />
+
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <!-- RIGHT -->
+      <section class="right-section">
+        <div class="login-box">
+          <!-- TITLE -->
+           <h1>Disposa</h1>
+          <h3>Sign In</h3>
+
+          <p class="login-description">Please enter your account details.</p>
+
+          <!-- GOOGLE SSO -->
+          <button
+            type="button"
+            class="google-button"
+            aria-label="Sign in with Google"
+          >
+            <span class="google-icon">G</span>
+
+            <span> Sign in with Google </span>
+          </button>
+
+          <!-- DIVIDER -->
+          <div class="divider">
+            <span>or</span>
+          </div>
+
+          <!-- LOGIN FORM -->
+          <form>
+            <!-- EMAIL / USERNAME -->
+            <div class="input-group">
+              <label for="email"> Email or Username </label>
+
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter your email or username"
+                required
+              />
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="input-group">
+              <div class="password-label">
+                <label for="password"> Password </label>
+              </div>
+
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required/>
+              <a href="forgot-password.html"> Forgot Password? </a>
+            </div>
+
+            <!-- REMEMBER ME -->
+            <div class="remember">
+              <input type="checkbox" id="remember" name="remember" />
+
+              <label for="remember"> Remember Me </label>
+            </div>
+
+            <!-- SIGN IN -->
+            <button type="submit" class="signin-button">Sign In</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
